@@ -10,17 +10,17 @@ import {
 import { Crown, Shell, Chrome } from "lucide-react";
 
 const partners = [
-  { name: "Kings Dev", description: "Software Development", icon: Crown },
+  { name: "Kings Dev", description: "Desarrollo de software", icon: Crown },
   {
     name: "Shell",
     description:
-      "As a leading software development partner, Kings Dev has collaborated with Shell to",
+      "Como socio líder en desarrollo de software, Kings Dev ha colaborado con Shell para",
     icon: Shell,
   },
   {
     name: "Google",
     description:
-      "Our partnership with Google has enabled us to leverage the latest cloud technologies and",
+      "Nuestra asociación con Google nos ha permitido aprovechar las últimas tecnologías en la nube y mas",
     icon: Chrome,
   },
 ];
@@ -36,10 +36,12 @@ export function Deploy() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold">Deploy</h2>
-          <p className="mt-2 text-gray-500">
-            Once your solution is ready, we'll work with you to deploy it,
-            providing comprehensive training and ongoing support to ensure a
+          <h2 className="text-3xl font-bold text-violet-500">Despliegue</h2>
+          <p className="mt-2">
+            Una vez que su solución esté lista, trabajaremos con usted para
+            implementarla. proporcionando formación integral y apoyo continuo
+            para garantizar una experiencia sin problemas y el máximo éxito en
+            la adopción y uso de la solución.
           </p>
         </motion.div>
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -10,24 +10,24 @@ import {
 
 const faqs = [
   {
-    question: "What types of businesses do you work with?",
+    question: "¿Con qué tipos de empresas trabajan?",
     answer:
-      "We work with businesses of all sizes across various industries. Our clients range from startups to large enterprises in sectors such as e-commerce, healthcare, finance, and more.",
+      "Trabajamos con empresas de todos los tamaños en diversas industrias. Nuestros clientes van desde nuevas empresas hasta grandes empresas en sectores como el comercio electrónico, la atención médica, las finanzas y más.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "¿Cuánto tiempo lleva un proyecto típico?",
     answer:
-      "Project timelines can vary depending on the scope and complexity. A small project might take 4-6 weeks, while larger, more complex projects can take several months. We always provide a detailed timeline during our initial consultation.",
+      "Los plazos del proyecto pueden variar según el alcance y la complejidad. Un proyecto pequeño puede tardar entre 4 y 6 semanas, mientras que proyectos más grandes y complejos pueden tardar varios meses. Siempre proporcionamos un cronograma detallado durante nuestra consulta inicial.",
   },
   {
-    question: "Do you offer ongoing support and maintenance?",
+    question: "¿Ofrecen soporte y mantenimiento continuo?",
     answer:
-      "Yes, we offer comprehensive support and maintenance packages to ensure your software continues to perform optimally. Our team is always available to address any issues and implement updates as needed.",
+      "Sí, ofrecemos paquetes integrales de soporte y mantenimiento para garantizar que su software siga funcionando de manera óptima. Nuestro equipo siempre está disponible para abordar cualquier problema e implementar actualizaciones según sea necesario.",
   },
   {
-    question: "What technologies do you specialize in?",
+    question: "¿En qué tecnologías se especializan?",
     answer:
-      "We specialize in a wide range of technologies including but not limited to React, Node.js, Python, .NET, and cloud platforms like AWS and Azure. We always choose the best technology stack for each project's specific needs.",
+      "Nos especializamos en una amplia gama de tecnologías que incluyen, entre otras, React, Node.js, Python, .NET y plataformas en la nube como AWS y Azure. Siempre elegimos la mejor pila tecnológica para las necesidades específicas de cada proyecto.",
   },
 ];
 
@@ -42,9 +42,11 @@ export function FAQ() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
-          <p className="mt-2 text-gray-500">
-            Find answers to common questions about our services
+          <h2 className="text-3xl font-bold text-violet-500">
+            Preguntas frecuentes
+          </h2>
+          <p className="mt-2">
+            Encuentre respuestas a preguntas comunes sobre nuestros servicios
           </p>
         </motion.div>
         <Accordion

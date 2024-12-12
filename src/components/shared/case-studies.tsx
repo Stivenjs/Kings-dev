@@ -7,15 +7,15 @@ import { ArrowRight } from "lucide-react";
 
 const caseStudies = [
   {
-    title: "Revolutionizing E-commerce for RetailGiant",
+    title: "Revolucionando el comercio electrónico para RetailGiant",
     description:
-      "How we helped RetailGiant increase their online sales by 200% with a custom e-commerce solution.",
+      "Cómo ayudamos a RetailGiant a aumentar sus ventas online en un 200 % con una solución de comercio electrónico personalizada.",
     image: "/placeholder.svg",
   },
   {
-    title: "Streamlining Operations for LogisticsPro",
+    title: "Optimización de operaciones para LogisticsPro",
     description:
-      "Our tailored software reduced LogisticsPro's operational costs by 35% and improved efficiency.",
+      "Nuestro software personalizado redujo los costos operativos de LogisticsPro en un 35% y mejoró la eficiencia.",
     image: "/placeholder.svg",
   },
 ];
@@ -31,9 +31,11 @@ export function CaseStudies() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl font-bold">Case Studies</h2>
-          <p className="mt-2 text-gray-500">
-            See how we've helped businesses like yours succeed
+          <h2 className="text-3xl font-bold text-violet-500">
+            Casos de estudio
+          </h2>
+          <p className="mt-2">
+            Vea cómo hemos ayudado a empresas como la suya a tener éxito
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -57,7 +59,7 @@ export function CaseStudies() {
                 <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
                 <p className="text-gray-600 mb-4">{study.description}</p>
                 <Button variant="outline">
-                  Read More <ArrowRight className="ml-2 h-4 w-4" />
+                  Leer más <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </motion.div>

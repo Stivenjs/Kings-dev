@@ -15,17 +15,22 @@ export function EmpoweringBusinesses() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold">Empowering Businesses</h2>
-            <p className="mt-4 text-gray-500">
-              At Kings Dev, we believe that software is the key to unlocking new
-              levels of efficiency, productivity, and growth for businesses of
-              all sizes. Our team of skilled developers and designers work
-              tirelessly to create custom solutions that empower your business
-              to reach its full potential.
+            <h2 className="text-3xl font-bold text-violet-500">
+              Empoderando a las empresas
+            </h2>
+            <p className="mt-4 ">
+              En Kings Dev, creemos que el software es la clave para desbloquear
+              nuevos niveles de eficiencia, productividad y crecimiento para las
+              empresas de todos los tamaños. Nuestro equipo de desarrolladores y
+              diseñadores cualificados trabaja incansablemente para crear
+              soluciones personalizadas que potencien su negocio para alcanzar
+              su máximo potencial.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Button>Get a Quote</Button>
-              <Button variant="outline">Schedule a Consultation</Button>
+              <Button className="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                Obtenga una cotización
+              </Button>
+              <Button variant="outline">Programe una consulta</Button>
             </div>
           </motion.div>
           <motion.div

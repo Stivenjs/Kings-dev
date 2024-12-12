@@ -1,42 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, FileText, Paintbrush, Code, TestTube } from "lucide-react";
 import Image from "next/image";
 
 const processSteps = [
   {
-    title: "Discover",
+    title: "Descubrir",
     description:
-      "We start by understanding your needs. Our team will work closely with you to gather insights",
+      "Empezamos por entender sus necesidades. Nuestro equipo trabajará estrechamente con usted para recopilar información.",
     icon: Search,
   },
   {
-    title: "Define",
-    description: "Together, we'll define the scope, timeline",
+    title: "Definir",
+    description: "Juntos, definiremos el alcance, la línea de tiempo de su proyecto",
     icon: FileText,
   },
   {
-    title: "Design",
+    title: "Diseño",
     description:
-      "Our designers and developers will create a detailed blueprint for",
+      "Nuestros diseñadores y desarrolladores crearán un plano detallado para ti",
     icon: Paintbrush,
   },
   {
-    title: "Build",
-    description: "Our skilled developers will bring your solution to life",
+    title: "Construir",
+    description:
+      "Nuestros desarrolladores cualificados darán vida a su solución",
     icon: Code,
   },
   {
-    title: "Test",
+    title: "Prueba",
     description:
-      "We'll put your solution through rigorous testing to identify and",
+      "Someteremos su solución a pruebas rigurosas para identificar fallas y errores",
     icon: TestTube,
   },
 ];
@@ -52,8 +48,10 @@ export function OurProcess() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold">Our Process</h2>
-          <p className="mt-2 text-gray-500">At Kings Dev, we follow a proven</p>
+          <h2 className="text-3xl font-bold text-violet-500">
+            Nuestro proceso
+          </h2>
+          <p className="mt-2">En Kings Dev, seguimos un método probado</p>
         </motion.div>
         <div className="mt-12 grid lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">

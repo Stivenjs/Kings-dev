@@ -39,8 +39,10 @@ export function Services() {
     <section className="py-12">
       <div className="container">
         <ScrollAnimation className="text-center">
-          <h2 className="text-3xl font-bold">Nuestros Servicios</h2>
-          <p className="mt-2 text-gray-500">En Kings Dev</p>
+          <h2 className="text-3xl font-bold text-violet-500">
+            Nuestros Servicios
+          </h2>
+          <p className="mt-2 ">En Kings Dev</p>
         </ScrollAnimation>
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (

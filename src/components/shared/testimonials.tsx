@@ -14,21 +14,21 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "CEO, TechCorp",
     content:
-      "Kings Dev transformed our business with their innovative solutions. Their team's expertise and dedication are unmatched.",
+      "Kings Dev transformó nuestro negocio con sus soluciones innovadoras. La experiencia y la dedicación de su equipo son incomparables.",
     avatar: "/placeholder.svg",
   },
   {
     name: "Michael Chen",
     role: "CTO, StartupX",
     content:
-      "Working with Kings Dev was a game-changer for our startup. They delivered a high-quality product on time and within budget.",
+      "Trabajar con Kings Dev fue un punto de inflexión para nuestra startup. Entregaron un producto de alta calidad a tiempo y dentro del presupuesto.",
     avatar: "/placeholder.svg",
   },
   {
     name: "Emily Rodriguez",
     role: "Product Manager, EnterpriseY",
     content:
-      "The team at Kings Dev is incredibly responsive and skilled. They turned our vision into reality, exceeding our expectations.",
+      "El equipo de Kings Dev es increíblemente receptivo y capacitado. Hicieron realidad nuestra visión, superando nuestras expectativas.",
     avatar: "/placeholder.svg",
   },
 ];
@@ -44,10 +44,12 @@ export function Testimonials() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl font-bold">What Our Clients Say</h2>
-          <p className="mt-2 text-gray-500">
-            Don't just take our word for it - hear from some of our satisfied
-            clients
+          <h2 className="text-3xl font-bold text-violet-500">
+            Lo que dicen nuestros clientes
+          </h2>
+          <p className="mt-2">
+            No confíe sólo en nuestra palabra: escuche a algunos de nuestros
+            clientes satisfechos
           </p>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-6">

@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import { Award, Users, Code, ThumbsUp } from "lucide-react";
 
 const achievements = [
-  { icon: Award, label: "Certified Microsoft Partner" },
-  { icon: Users, label: "500+ Satisfied Clients" },
-  { icon: Code, label: "1000+ Projects Completed" },
-  { icon: ThumbsUp, label: "99% Client Satisfaction Rate" },
+  { icon: Award, label: "Socio certificado de Microsoft" },
+  { icon: Users, label: "Más de 500 clientes satisfechos" },
+  { icon: Code, label: "Más de 1000 proyectos completados" },
+  { icon: ThumbsUp, label: "Tasa de satisfacción del cliente del 99%" },
 ];
 
 export function Achievements() {
   return (
-    <section className="py-12 bg-primary text-primary-foreground">
+    <section className="py-12 bg-gradient-to-r from-violet-500 to-fuchsia-300">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,12 +21,13 @@ export function Achievements() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl font-bold">Our Achievements</h2>
+          <h2 className="text-3xl font-bold text-white">Nuestros logros</h2>
           <p className="mt-2 text-primary-foreground/80">
-            Recognitions that showcase our expertise and client satisfaction
+            Reconocimientos que demuestran nuestra experiencia y satisfacción
+            del cliente
           </p>
         </motion.div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white">
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.label}

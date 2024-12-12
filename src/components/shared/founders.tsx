@@ -23,11 +23,13 @@ export function Founders() {
                 className="rounded-full"
               />
               <div>
-                <h2 className="text-2xl font-bold">Meet the Founders</h2>
-                <p className="text-gray-500 mt-2">
-                  Kings Dev was founded by a team of seasoned entrepreneurs and
-                  technology experts who share a passion for using software to
-                  transform businesses
+                <h2 className="text-2xl font-bold text-violet-500">
+                  Conoce a los fundadores
+                </h2>
+                <p className="mt-2">
+                  Kings Dev fue fundada por un equipo de emprendedores
+                  experimentados y expertos en tecnología que comparten la
+                  pasión por el uso de software para transformar negocios
                 </p>
               </div>
             </div>
@@ -47,11 +49,14 @@ export function Founders() {
                 className="rounded-full"
               />
               <div>
-                <h2 className="text-2xl font-bold">Our Values</h2>
-                <p className="text-gray-500 mt-2">
-                  At the heart of Kings Dev is a set of core values that guide
-                  our every decision and action. We are committed to innovation,
-                  collaboration, transparency
+                <h2 className="text-2xl font-bold text-violet-500">
+                  Nuestros valores
+                </h2>
+                <p className="mt-2">
+                  En el corazón de Kings Dev hay un conjunto de valores
+                  fundamentales que guían cada una de nuestras decisiones y
+                  acciones. Estamos comprometidos con la innovación,
+                  colaboración, transparencia
                 </p>
               </div>
             </div>
