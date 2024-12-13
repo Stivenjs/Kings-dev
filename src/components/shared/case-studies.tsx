@@ -7,16 +7,20 @@ import { ArrowRight } from "lucide-react";
 
 const caseStudies = [
   {
-    title: "Revolucionando el comercio electrónico para RetailGiant",
+    title: "Revolucionando el comercio electrónico para Reffinato",
     description:
-      "Cómo ayudamos a RetailGiant a aumentar sus ventas online en un 200 % con una solución de comercio electrónico personalizada.",
-    image: "/placeholder.svg",
+      "Cómo ayudamos a Reffinato a aumentar sus ventas online en un 200 % con una solución de comercio electrónico personalizada.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/database-login-2b2c5.appspot.com/o/fotos%2FWhatsApp%20Image%202024-12-12%20at%207.22.40%20PM.jpeg?alt=media&token=8a62e2a7-ae31-4bc6-8766-25571e607916",
+    link: "https://reffinato-production.up.railway.app/",
   },
   {
-    title: "Optimización de operaciones para LogisticsPro",
+    title: "Optimización de operaciones para Mixmeet",
     description:
-      "Nuestro software personalizado redujo los costos operativos de LogisticsPro en un 35% y mejoró la eficiencia.",
-    image: "/placeholder.svg",
+      "Nuestro software personalizado redujo los costos operativos de MixMeet en un 35% y mejoró la eficiencia.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/database-login-2b2c5.appspot.com/o/fotos%2FScreenshot%202024-12-12%20193154.png?alt=media&token=6e2209b1-c930-4d8f-b712-6101004902d1",
+    link: "https://mix-meet.vercel.app/",
   },
 ];
 
@@ -58,9 +62,16 @@ export function CaseStudies() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
                 <p className="text-gray-600 mb-4">{study.description}</p>
-                <Button variant="outline">
-                  Leer más <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <a
+                  href={study.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button variant="outline">
+                    Leer más <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </div>
             </motion.div>
           ))}

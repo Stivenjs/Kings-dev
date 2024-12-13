@@ -14,7 +14,8 @@ const processSteps = [
   },
   {
     title: "Definir",
-    description: "Juntos, definiremos el alcance, la línea de tiempo de su proyecto",
+    description:
+      "Juntos, definiremos el alcance, la línea de tiempo de su proyecto",
     icon: FileText,
   },
   {
@@ -80,13 +81,13 @@ export function OurProcess() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="relative h-[400px] lg:h-[500px]"
+            className="relative h-[400px] lg:h-[700px]"
           >
             <Image
-              src="/placeholder.svg"
+              src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Our Process"
               fill
-              className="object-contain"
+              className="rounded-sm h-[500px] object-cover"
             />
           </motion.div>
         </div>

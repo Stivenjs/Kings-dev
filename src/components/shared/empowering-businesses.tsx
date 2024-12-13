@@ -38,13 +38,13 @@ export function EmpoweringBusinesses() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="relative h-[300px] lg:h-[400px]"
+            className="relative h-[300px] lg:h-[400px] rounded-sm "
           >
             <Image
-              src="/placeholder.svg"
+              src="https://images.pexels.com/photos/8761540/pexels-photo-8761540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Empowering Businesses"
               fill
-              className="object-contain"
+              className="rounded-sm h-[500px] object-cover"
             />
           </motion.div>
         </div>

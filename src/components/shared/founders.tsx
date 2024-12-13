@@ -16,7 +16,7 @@ export function Founders() {
           >
             <div className="flex items-center space-x-4">
               <Image
-                src="/placeholder.svg"
+                src="/"
                 alt="Founder"
                 width={80}
                 height={80}
