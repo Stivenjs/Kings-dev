@@ -6,7 +6,7 @@ import { Award, Users, Code, ThumbsUp } from "lucide-react";
 const achievements = [
   { icon: Award, label: "Socio certificado de Microsoft" },
   { icon: Users, label: "Más de 500 clientes satisfechos" },
-  { icon: Code, label: "Más de 100 proyectos completados" },
+  { icon: Code, label: "Más de 1000 proyectos completados" },
   { icon: ThumbsUp, label: "Tasa de satisfacción del cliente del 99%" },
 ];
 
