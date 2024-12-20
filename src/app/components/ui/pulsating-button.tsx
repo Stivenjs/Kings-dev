@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 
 interface PulsatingButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -21,7 +21,7 @@ export default function PulsatingButton({
     <button
       className={cn(
         "relative text-center cursor-pointer flex justify-center items-center rounded-lg text-white dark:text-black bg-blue-500 dark:bg-blue-500 px-4 py-2",
-        className,
+        className
       )}
       style={
         {

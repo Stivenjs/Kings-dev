@@ -1,6 +1,6 @@
 "use client";
 import { GridOverlay } from "./GridOverlay";
-import { useScrollEffect } from "@/hooks/useScrollEffect";
+import { useScrollEffect } from "@/app/hooks/useScrollEffect";
 import Image from "next/image";
 const ImageSection = () => {
   const { opacity, transform } = useScrollEffect();

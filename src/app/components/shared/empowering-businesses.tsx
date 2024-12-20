@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FormModal } from "@/components/shared/form-modal";
+import { FormModal } from "../shared/form-modal";
 import Image from "next/image";
 
 export function EmpoweringBusinesses() {

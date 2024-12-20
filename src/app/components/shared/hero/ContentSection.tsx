@@ -1,7 +1,7 @@
 import React from "react";
 import TechStack from "./TechStack";
 import Image from "next/image";
-import { FormModal } from "@/components/shared/form-modal";
+import { FormModal } from "../../shared/form-modal";
 
 const ContentSection = () => {
   return (
