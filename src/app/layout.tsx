@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kings Dev - Startup de desarrollo de software",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icono.ico",
   },
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icono.ico" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
