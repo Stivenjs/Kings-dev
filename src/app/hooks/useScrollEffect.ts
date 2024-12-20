@@ -1,15 +1,16 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 export const useScrollEffect = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Detectar el tamaño de la pantalla (móvil o no)
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 768); // Asumimos que dispositivos móviles son <= 768px
     };
 
-    handleResize(); // Inicializar en función del tamaño de la ventana
+    handleResize(); // Llamar al inicio para establecer el estado correcto
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -17,26 +18,22 @@ export const useScrollEffect = () => {
     };
   }, []);
 
-  const handleScroll = useCallback(() => {
+  useEffect(() => {
     if (!isMobile) {
-      setScrollY(window.scrollY);
+      const handleScroll = () => {
+        setScrollY(window.scrollY); // Solo actualizar el scroll si no es móvil
+      };
+
+      window.addEventListener("scroll", handleScroll, { passive: true });
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
   }, [isMobile]);
 
-  useEffect(() => {
-    const throttledScroll = () => {
-      requestAnimationFrame(handleScroll); // Asegura que el scroll se maneje eficientemente
-    };
-
-    window.addEventListener("scroll", throttledScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", throttledScroll);
-    };
-  }, [handleScroll]);
-
   const calculateOpacity = () => {
-    if (isMobile) return 1; // No aplicar efecto en móviles
+    if (isMobile) return 1; // No aplicar opacidad en móviles
     const maxScroll = window.innerHeight * 0.3;
     return Math.max(0, 1 - scrollY / maxScroll);
   };
