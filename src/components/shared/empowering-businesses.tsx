@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { FormModal } from "@/components/shared/form-modal";
 import Image from "next/image";
 

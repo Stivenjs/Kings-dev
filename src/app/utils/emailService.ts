@@ -6,8 +6,8 @@ import Handlebars from "handlebars";
 const transporter = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: "kingdevs01@gmail.com",
-    pass: "zsnl ancd jacz fjhf",
+    user: process.env.MAIL_USER, 
+    pass: process.env.MAIL_PASS,
   },
 });
 
