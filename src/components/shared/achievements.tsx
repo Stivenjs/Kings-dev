@@ -1,13 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, Users, Code, ThumbsUp } from "lucide-react";
+import { Code2, Users, Clock, Star } from "lucide-react";
 
 const achievements = [
-  { icon: Award, label: "Socio certificado de Microsoft" },
-  { icon: Users, label: "Más de 500 clientes satisfechos" },
-  { icon: Code, label: "Más de 100 proyectos completados" },
-  { icon: ThumbsUp, label: "Tasa de satisfacción del cliente del 99%" },
+  {
+    icon: Code2,
+    label: "10+ Proyectos Completados",
+    description: "Soluciones web y móviles entregadas",
+  },
+  {
+    icon: Users,
+    label: "15+ Clientes Activos",
+    description: "Empresas confían en nuestros servicios",
+  },
+  {
+    icon: Clock,
+    label: "98% Tiempo de Actividad",
+    description: "Disponibilidad garantizada de servicios",
+  },
+  {
+    icon: Star,
+    label: "4.5/5 Satisfacción",
+    description: "Basado en encuestas a clientes",
+  },
 ];
 
 export function Achievements() {
@@ -21,10 +37,9 @@ export function Achievements() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl font-bold text-white">Nuestros logros</h2>
+          <h2 className="text-3xl font-bold text-white">Nuestro Impacto</h2>
           <p className="mt-2 text-primary-foreground/80">
-            Reconocimientos que demuestran nuestra experiencia y satisfacción
-            del cliente
+            Resultados que demuestran nuestro compromiso con la excelencia
           </p>
         </motion.div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white">
@@ -35,10 +50,13 @@ export function Achievements() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-center text-center p-4"
             >
               <achievement.icon className="h-12 w-12 mb-4" />
-              <p className="font-semibold">{achievement.label}</p>
+              <p className="font-semibold mb-2">{achievement.label}</p>
+              <p className="text-sm text-primary-foreground/80">
+                {achievement.description}
+              </p>
             </motion.div>
           ))}
         </div>

@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "¿En qué tecnologías se especializan?",
     answer:
-      "Nos especializamos en una amplia gama de tecnologías que incluyen, entre otras, React, Node.js, Python, .NET y plataformas en la nube como AWS y Azure. Siempre elegimos la mejor pila tecnológica para las necesidades específicas de cada proyecto.",
+      "Nos especializamos en una amplia gama de tecnologías que incluyen, entre otras, React, Node.js, Python, NestJS y plataformas en la nube como AWS y Azure. Siempre elegimos la mejor pila tecnológica para las necesidades específicas de cada proyecto.",
   },
 ];
 

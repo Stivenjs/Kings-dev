@@ -42,12 +42,13 @@ export function Founders() {
           >
             <div className="flex items-center space-x-4">
               <Image
-                src="/placeholder.svg"
+                src="https://images.pexels.com/photos/15543126/pexels-photo-15543126/free-photo-of-oficina-aula-clase-pizarra-blanca.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Our Values"
                 width={80}
                 height={80}
-                className="rounded-full"
+                className="rounded-s-3xl"
               />
+
               <div>
                 <h2 className="text-2xl font-bold text-violet-500">
                   Nuestros valores

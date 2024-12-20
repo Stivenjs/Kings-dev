@@ -1,35 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Laptop, Users, Info, Phone } from "lucide-react";
 import { ScrollAnimation } from "./scroll-animation";
 
 const services = [
   {
-    title: "Nuestro Trabajo",
-    description: "Echa un vistazo a algunos de nuestros proyectos innovadores",
+    title: "Desarrollo a Medida",
+    description: "Creamos soluciones digitales personalizadas para tu negocio.",
     icon: Laptop,
   },
   {
-    title: "Socios",
+    title: "Consultoría Tecnológica",
     description:
-      "Estamos orgullosos de trabajar con algunas de las mejores empresas",
-    icon: Users,
-  },
-  {
-    title: "Sobre Nosotros",
-    description: "Conoce más sobre el equipo detrás de Kings Dev",
+      "Te ayudamos a optimizar tus procesos con tecnología innovadora.",
     icon: Info,
   },
   {
-    title: "Contáctanos",
-    description: "Ponte en contacto con nosotros hoy para discutir tu proyecto",
+    title: "Integraciones Eficientes",
+    description:
+      "Conectamos herramientas y plataformas para potenciar tu negocio.",
+    icon: Users,
+  },
+  {
+    title: "Soporte Continuo",
+    description:
+      "Estamos aquí para garantizar que todo funcione sin problemas.",
     icon: Phone,
   },
 ];

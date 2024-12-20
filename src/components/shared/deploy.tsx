@@ -1,65 +1,95 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Crown, Shell, Chrome } from "lucide-react";
+  Rocket,
+  Shield,
+  Users,
+  Code,
+  Cloud,
+  HeartHandshake,
+} from "lucide-react";
 
-const partners = [
-  { name: "Kings Dev", description: "Desarrollo de software", icon: Crown },
+const deploymentPhases = [
   {
-    name: "Shell",
+    name: "Planificación Estratégica",
     description:
-      "Como socio líder en desarrollo de software, Kings Dev ha colaborado con Shell para",
-    icon: Shell,
+      "Análisis detallado de requisitos y diseño de arquitectura personalizada para garantizar una implementación exitosa.",
+    icon: Code,
   },
   {
-    name: "Google",
+    name: "Seguridad Avanzada",
     description:
-      "Nuestra asociación con Google nos ha permitido aprovechar las últimas tecnologías en la nube y mas",
-    icon: Chrome,
+      "Implementación de protocolos de seguridad robustos y cumplimiento normativo para proteger datos críticos.",
+    icon: Shield,
+  },
+  {
+    name: "Migración Sin Interrupciones",
+    description:
+      "Proceso de migración optimizado para mantener la continuidad del negocio sin afectar las operaciones diarias.",
+    icon: Cloud,
+  },
+  {
+    name: "Despliegue Automatizado",
+    description:
+      "Utilización de CI/CD para garantizar implementaciones consistentes y libres de errores en todos los entornos.",
+    icon: Rocket,
+  },
+  {
+    name: "Capacitación Integral",
+    description:
+      "Programas de formación personalizados para asegurar la adopción efectiva por parte del equipo.",
+    icon: Users,
+  },
+  {
+    name: "Soporte Continuo",
+    description:
+      "Asistencia técnica 24/7 y mantenimiento proactivo para optimizar el rendimiento y resolver incidencias.",
+    icon: HeartHandshake,
   },
 ];
 
 export function Deploy() {
   return (
-    <section className="py-12">
-      <div className="container">
+    <section className="py-16 bg-gradient-to-b from-white to-violet-50">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center"
+          className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl font-bold text-violet-500">Despliegue</h2>
-          <p className="mt-2">
-            Una vez que su solución esté lista, trabajaremos con usted para
-            implementarla. proporcionando formación integral y apoyo continuo
-            para garantizar una experiencia sin problemas y el máximo éxito en
-            la adopción y uso de la solución.
+          <h2 className="text-4xl font-bold text-violet-600 mb-6">
+            Proceso de Implementación
+          </h2>
+          <p className="text-lg  mb-12">
+            Nuestro enfoque metódico garantiza una implementación exitosa y sin
+            contratiempos de su solución tecnológica, respaldado por un equipo
+            experto comprometido con la excelencia operativa.
           </p>
         </motion.div>
-        <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {partners.map((partner, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {deploymentPhases.map((phase, index) => (
             <motion.div
-              key={partner.name}
+              key={phase.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full">
-                <CardHeader>
-                  <partner.icon className="h-6 w-6 mb-2" />
-                  <CardTitle>{partner.name}</CardTitle>
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+                <CardHeader className="space-y-1">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-violet-100 mb-4">
+                    <phase.icon className="h-6 w-6 text-violet-600" />
+                  </div>
+                  <CardTitle className="text-xl text-violet-500">
+                    {phase.name}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-500">{partner.description}</p>
+                  <p>{phase.description}</p>
                 </CardContent>
               </Card>
             </motion.div>

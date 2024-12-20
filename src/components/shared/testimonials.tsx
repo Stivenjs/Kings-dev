@@ -11,15 +11,15 @@ import {
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechCorp",
+    name: "Sarah Garcia",
+    role: "Diseñadora de Producto, CompanyZ",
     content:
       "Kings Dev transformó nuestro negocio con sus soluciones innovadoras. La experiencia y la dedicación de su equipo son incomparables.",
     avatar: "/placeholder.svg",
   },
   {
-    name: "Michael Chen",
-    role: "CTO, StartupX",
+    name: "Manuel Carreon",
+    role: "CTO, Reffinato",
     content:
       "Trabajar con Kings Dev fue un punto de inflexión para nuestra startup. Entregaron un producto de alta calidad a tiempo y dentro del presupuesto.",
     avatar: "/placeholder.svg",

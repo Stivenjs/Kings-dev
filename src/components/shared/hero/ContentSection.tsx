@@ -1,8 +1,7 @@
 import React from "react";
 import TechStack from "./TechStack";
 import Image from "next/image";
-import PulsatingButton from "@/components/ui/pulsating-button";
-import { ArrowRight } from "lucide-react";
+import { FormModal } from "@/components/shared/form-modal";
 
 const ContentSection = () => {
   return (
@@ -24,25 +23,22 @@ const ContentSection = () => {
             </span>
           </h1>
         </div>
-
         <p className="text-lg text-gray-400 max-w-lg">
           Transformamos ideas en experiencias digitales excepcionales.
           Especialistas en desarrollo web, móvil e inteligencia artificial.
         </p>
-
         <div className="flex flex-col sm:flex-row gap-4">
-          <PulsatingButton className="group relative px-8 py-4 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-full font-medium text-white overflow-hidden">
-            <span className="relative flex items-center justify-center gap-2">
-              Inicia tu Proyecto
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </span>
-          </PulsatingButton>
+          <FormModal
+            buttonLabel="Inicia tu Proyecto"
+            title="Inicia tu Proyecto"
+          />
+
           <a
             href="https://portafolio-king-devs.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-8 py-4 rounded-full font-medium text-white border border-white/20 hover:bg-white/5 transition-colors">
+            <button className="w-full px-8 py-4 rounded-full font-medium text-white border border-white/20 hover:bg-white/5 transition-colors sm:w-auto">
               Ver Portafolio
             </button>
           </a>

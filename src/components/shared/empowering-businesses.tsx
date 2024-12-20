@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { FormModal } from "@/components/shared/form-modal";
 import Image from "next/image";
 
 export function EmpoweringBusinesses() {
@@ -27,10 +28,11 @@ export function EmpoweringBusinesses() {
               su máximo potencial.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Button className="bg-gradient-to-r from-violet-500 to-fuchsia-500">
-                Obtenga una cotización
-              </Button>
-              <Button variant="outline">Programe una consulta</Button>
+              <FormModal
+                buttonLabel="Obtenga una cotización"
+                title="Inicia tu Proyecto"
+                showIcon={true}
+              />
             </div>
           </motion.div>
           <motion.div

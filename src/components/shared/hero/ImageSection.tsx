@@ -12,13 +12,17 @@ const ImageSection = () => {
         style={{ opacity }}
       />
       <div
-        className="absolute inset-0 transition-transform duration-300 ease-out will-change-transform"
-        style={{ transform }}
+        className="absolute inset-0 will-change-transform"
+        style={{
+          transform,
+          transition: "transform 0.1s linear",
+        }}
       >
         <img
           src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&q=80"
           alt="Tech Innovation"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="h-full w-full object-cover object-center"
+          style={{ transform: "scale(1.1)" }}
         />
       </div>
       <GridOverlay opacity={opacity} />
