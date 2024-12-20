@@ -10,29 +10,33 @@ import { Deploy } from "./components/shared/deploy";
 import { ScrollToTop } from "./components/shared/scroll-to-top";
 import { WhatsAppButton } from "./components/shared/whatsapp-button";
 import Hero from "./components/shared/hero/Hero";
+import ClientOnlyWrapper from "./components/shared/ClientOnlyWrapper";
+
 export default function Home() {
   return (
-    <main>
-      <section>
-        <Hero />
-      </section>
-      <section>
-        <Services />
-      </section>
-      <section>
-        <Founders />
-        <EmpoweringBusinesses />
-      </section>
-      <section>
-        <OurProcess />
-      </section>
-      <Testimonials />
-      <CaseStudies />
-      <Achievements />
-      <FAQ />
-      <Deploy />
-      <ScrollToTop />
-      <WhatsAppButton />
-    </main>
+    <ClientOnlyWrapper>
+      <main>
+        <section>
+          <Hero />
+        </section>
+        <section>
+          <Services />
+        </section>
+        <section>
+          <Founders />
+          <EmpoweringBusinesses />
+        </section>
+        <section>
+          <OurProcess />
+        </section>
+        <Testimonials />
+        <CaseStudies />
+        <Achievements />
+        <FAQ />
+        <Deploy />
+        <ScrollToTop />
+        <WhatsAppButton />
+      </main>
+    </ClientOnlyWrapper>
   );
 }
