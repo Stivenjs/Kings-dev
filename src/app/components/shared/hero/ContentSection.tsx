@@ -32,16 +32,6 @@ const ContentSection = () => {
             buttonLabel="Inicia tu Proyecto"
             title="Inicia tu Proyecto"
           />
-
-          <a
-            href="https://portafolio-king-devs.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="w-full px-8 py-4 rounded-full font-medium text-white border border-white/20 hover:bg-white/5 transition-colors sm:w-auto">
-              Ver Portafolio
-            </button>
-          </a>
         </div>
 
         <TechStack />
