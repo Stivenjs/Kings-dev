@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import ImageSection from "./ImageSection";
 import ContentSection from "./ContentSection";
 import ScrollIndicator from "../ScrollIndicator";
