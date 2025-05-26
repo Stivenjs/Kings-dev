@@ -113,7 +113,7 @@ export function FormModal({
             </span>
           </PulsatingButton>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[500px] bg-white border-0 rounded-lg shadow-2xl">
+        <DialogContent className="w-11/12 max-w-md md:max-w-lg bg-white border-0 rounded-lg shadow-2xl">
           <DialogHeader>
             <DialogTitle className="text-3xl font-bold text-gray-800 text-center">
               {title}
